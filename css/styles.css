@@ -112,3 +112,82 @@ body {
   color: #555555;
 }
 /* ============= END ABOUT ============= */
+
+/* ============= SERVICES ============= */
+.services-list-name,
+.services-list-price {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* ============= END SERVICES ============= */
+
+/* ============= ADVANTAGES ============= */
+.advantages-list-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.advantages-list-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  text-align: center;
+  color: #303030;
+}
+/* ============= END ADVANTAGES ============= */
+
+/* ============= MASTERS ============= */
+.masters-list-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters-list-position {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* ============= END MASTERS ============= */
+
+/* ============= GALLERY ============= */
+
+/* ============= END GALLERY ============= */
+
+/* ============= CONTACT INFORMATION ============= */
+.contact-info-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contact-info-date {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* ============= END CONTACT INFORMATION ============= */
+
+/* ============= FOOTER ============= */
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+/* ============= END FOOTER ============= */
