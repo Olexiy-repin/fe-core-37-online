@@ -10,34 +10,40 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header">
-        <nav class="navigation">
-            <a class="logo-link link" href="./index.html">
-                <img class="logo-img" src="./images/header/logo.svg" alt="логотип" width="68" height="54">
-            </a>
-            <ul class="menu list">
-                <li class="menu-item">
-                    <a class="menu-link link" href="">О нас</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="">Услуги и цены</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="">Мастера</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-btn" type="button">онлайн-запись</button>
+        <div class="container header-container">
+            <nav class="navigation">
+                <a class="logo-link link" href="./index.html">
+                    <img class="logo-img" src="./images/header/logo.svg" alt="логотип" width="68" height="54">
+                </a>
+                <ul class="menu list">
+                    <li class="menu-item">
+                        <a class="menu-link link" href="">О нас</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="">Услуги и цены</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="">Мастера</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="modal-btn" type="button">онлайн-запись</button>
+        </div>
     </header>
+
     <main>
         <!-- HERO -->
         <section class="hero">
@@ -156,29 +162,37 @@
             </div>
         </section>
         <!-- MASTERS -->
-        <section>
-            <p class="suptitle">для настоящих ценителей атмосферы</p>
-            <h2 class="title">Наши мастера</h2>
-            <ul class="masters-list list">
-                <li class="masters-list-item">
-                    <img class="masters-list-img" src="./images/masters/john.jpg" alt="мастер срижет клиента"
-                        width="370" height="346">
-                    <h3 class="masters-list-name" lang="en">John Smith</h3>
-                    <p class="masters-list-position" lang="en">Extreme Barber</p>
-                </li>
-                <li class="masters-list-item">
-                    <img class="masters-list-img" src="./images/masters/michele.jpg" alt="мастер срижет клиента"
-                        width="370" height="346">
-                    <h3 class="masters-list-name" lang="en">Michele Doe</h3>
-                    <p class="masters-list-position" lang="en">Extreme Barber</p>
-                </li>
-                <li class="masters-list-item">
-                    <img class="masters-list-img" src="./images/masters/alan.jpg" alt="мастер срижет клиента"
-                        width="370" height="346">
-                    <h3 class="masters-list-name" lang="en">Alan Black</h3>
-                    <p class="masters-list-position" lang="en">Extreme Barber</p>
-                </li>
-            </ul>
+        <section class="masters section">
+            <div class="container">
+                <p class="suptitle">для настоящих ценителей атмосферы</p>
+                <h2 class="title masters-title">Наши мастера</h2>
+                <ul class="masters-list list">
+                    <li class="masters-list-item">
+                        <img class="masters-list-img" src="./images/masters/john.jpg" alt="мастер срижет клиента"
+                            width="370" height="346">
+                        <div class="masters-list-content">
+                            <h3 class="masters-list-name" lang="en">John Smith</h3>
+                            <p class="masters-list-position" lang="en">Extreme Barber</p>
+                        </div>
+                    </li>
+                    <li class="masters-list-item">
+                        <img class="masters-list-img" src="./images/masters/michele.jpg" alt="мастер срижет клиента"
+                            width="370" height="346">
+                        <div class="masters-list-content">
+                            <h3 class="masters-list-name" lang="en">Michele Doe</h3>
+                            <p class="masters-list-position" lang="en">Extreme Barber</p>
+                        </div>
+                    </li>
+                    <li class="masters-list-item">
+                        <img class="masters-list-img" src="./images/masters/alan.jpg" alt="мастер срижет клиента"
+                            width="370" height="346">
+                        <div class="masters-list-content">
+                            <h3 class="masters-list-name" lang="en">Alan Black</h3>
+                            <p class="masters-list-position" lang="en">Extreme Barber</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- GALLERY -->
         <section class="gallery">
