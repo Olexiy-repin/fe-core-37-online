@@ -70,6 +70,22 @@ body {
   background-color: var(--accent-color);
 }
 
+.modal-btn-theme-dark {
+  color: #ffffff;
+}
+
+.modal-btn-theme-light {
+  color: #303030;
+}
+
+.social-links-list {
+  display: flex;
+}
+
+.social-links-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .social-links-list-link {
   font-weight: 600;
   font-size: 11px;
@@ -92,10 +108,26 @@ body {
   margin-bottom: 20px;
 }
 
+.suptitle-theme-dark {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.suptitle-theme-light {
+  color: #303030;
+}
+
 .description {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+}
+
+.description-theme-dark {
+  color: #9da4bd;
+}
+
+.description-theme-light {
+  color: #555555;
 }
 
 .title {
@@ -104,6 +136,14 @@ body {
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
+}
+
+.title-theme-dark {
+  color: #ffffff;
+}
+
+.title-theme-light {
+  color: #303030;
 }
 /* ============= END COMPONENTS ============= */
 
@@ -164,24 +204,105 @@ body {
 /* ============= END HEADER ============= */
 
 /* ============= HERO ============= */
+.hero-container {
+  display: flex;
+}
+
+.hero-description {
+  max-width: 400px;
+}
+
+.hero-left-side {
+  width: 100px;
+}
+
+.hero-right-side {
+  padding-top: 272px;
+  padding-bottom: 206px;
+  padding-left: 100px;
+  flex-grow: 1;
+  background-color: #333;
+}
+
 .hero-title {
   font-family: var(--secondary-font);
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 /* ============= END HERO ============= */
 
 /* ============= ABOUT ============= */
+.about-container {
+  display: flex;
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+.about-description {
+  margin-bottom: 20px;
+}
+
+.about-left-side {
+  margin-right: 64px;
+}
+
+.about-img-list {
+  display: flex;
+}
+
+.about-img-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .about-text {
+  max-width: 480px;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 40px;
 }
 /* ============= END ABOUT ============= */
 
 /* ============= SERVICES ============= */
+.services {
+  background-color: #303030;
+}
+
+.services-title {
+  margin-bottom: 44px;
+}
+
+.services-modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.services-list-wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.services-list {
+  width: 50%;
+  padding: 30px 40px;
+  border: 1px solid #fff;
+}
+
+.services-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .services-list-name,
 .services-list-price {
   font-size: 18px;
@@ -192,6 +313,49 @@ body {
 /* ============= END SERVICES ============= */
 
 /* ============= ADVANTAGES ============= */
+.advantages-container {
+  display: flex;
+}
+
+.advantages-title {
+  margin-bottom: 20px;
+}
+
+.advantages-description {
+  max-width: 464px;
+}
+
+.advantages-left-side,
+.advantages-right-side {
+  width: calc(100% / 2 - 15px);
+}
+
+.advantages-left-side {
+  margin-right: 30px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 370px;
+  margin: 0 auto;
+}
+
+.advantages-list-item {
+  width: 170px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.advantages-list-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.advantages-list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
 .advantages-list-count {
   font-weight: 700;
   font-size: 42px;
@@ -199,6 +363,7 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
+  margin-bottom: 6px;
 }
 
 .advantages-list-description {
@@ -256,7 +421,22 @@ body {
 /* ============= END MASTERS ============= */
 
 /* ============= GALLERY ============= */
+.gallery-suptitle {
+  margin-bottom: 44px;
+}
 
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.gallery-list-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 /* ============= END GALLERY ============= */
 
 /* ============= CONTACT INFORMATION ============= */
@@ -277,6 +457,17 @@ body {
 /* ============= END CONTACT INFORMATION ============= */
 
 /* ============= FOOTER ============= */
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .copyright {
   font-weight: 600;
   font-size: 11px;
