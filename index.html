@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
         integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
         crossorigin="anonymous" />
@@ -21,7 +22,7 @@
     <header class="header">
         <div class="container header-container">
             <nav class="navigation">
-                <a class="logo-link link" href="./index.html">
+                <a class="logo-link link animate__swing" href="./index.html">
                     <svg class="logo-img">
                         <use href="./images/sprite.svg#logo"></use>
                     </svg>
@@ -42,7 +43,7 @@
                 </ul>
             </nav>
             <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="modal-btn" type="button">онлайн-запись</button>
+            <button class="modal-btn modal-btn-theme-dark" type="button" data-modal-open>онлайн-запись</button>
         </div>
     </header>
 
@@ -51,7 +52,7 @@
         <section class="hero">
             <div class="container hero-container">
                 <div class="hero-left-side">
-                    <ul class="social-links-list list">
+                    <ul class="social-links-list hero-social-links-list list">
                         <li class="social-links-list-item">
                             <a class="social-links-list-link link" href="">Instagram</a>
                         </li>
@@ -374,6 +375,14 @@
             </ul>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>X</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
