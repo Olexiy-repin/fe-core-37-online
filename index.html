@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <form action="#" method="GET" class="contact-form">
+        <input type="text" name="user-name" class="contact-form-input" placeholder="Your name *" required minlength="2">
+        <input type="email" name="user-email" class="contact-form-input" placeholder="Your email *" required>
+        <input type="tel" name="user-phone" class="contact-form-input" placeholder="Your phone *" required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11">
+        <fieldset class="contact-form-fieldset">
+            <legend>Your Age</legend>
+            <input type="radio" name="user-age" class="contact-form-radio" value="20" id="user-age-20">
+            <label for="user-age-20">20</label>
+            <input type="radio" name="user-age" class="contact-form-radio" value="30" id="user-age-30">
+            <label for="user-age-30">30</label>
+            <input type="radio" name="user-age" class="contact-form-radio" value="40" id="user-age-40">
+            <label for="user-age-40">40</label>
+        </fieldset>
+        <fieldset class="contact-form-fieldset">
+            <legend>Your Hobby</legend>
+            <label>
+                <input type="checkbox" name="user-hobby" class="contact-form-checkbox" value="football">
+                football
+            </label>
+            <label>
+                <input type="checkbox" name="user-hobby" class="contact-form-checkbox" value="boxing">
+                boxing
+            </label>
+            <label>
+                <input type="checkbox" name="user-hobby" class="contact-form-checkbox" value="tennis">
+                tennis
+            </label>
+        </fieldset>
+
+        <textarea name="user-message" class="contact-form-message" placeholder="Your message"></textarea>
+
+        <label for="">Your city</label>
+        <select name="user-city" class="contact-form-select">
+            <option value="Kiev">Kiev</option>
+            <option value="Kharkov">Kharkov</option>
+            <option value="Odessa" selected>Odessa</option>
+        </select>
+
+        <div>
+            <button type="submit" class="contact-form-btn">Submit</button>
+            <button type="reset" class="contact-form-btn">Clear</button>
+        </div>
+    </form>
+</body>
+
+</html>
