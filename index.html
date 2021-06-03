@@ -379,6 +379,36 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>X</button>
+            <form action="#" class="modal-form">
+                <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
+                <label class="modal-form-field">
+                    Имя*
+                    <span class="modal-form-input-wrapper">
+                        <input type="text" name="user-name" class="modal-form-input" minlength="2" required
+                            placeholder="Oleksii">
+                        <span class="modal-form-icon"></span>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    Телефон*
+                    <span class="modal-form-input-wrapper">
+                        <input type="tel" name="user-phone" class="modal-form-input" required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11"
+                            placeholder="096-111-11-11">
+                        <span class="modal-form-icon"></span>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    Cообщение
+                    <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+                </label>
+                <input type="checkbox" name="user-policy" class="modal-form-checkbox visually-hidden"
+                    id="checkbox-policy" required>
+                <label for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю <a
+                        class="modal-form-policy-link" href="">Условия
+                        договора</a></label>
+                <button type="submit" class="modal-form-btn">отправить</button>
+            </form>
         </div>
     </div>
 
