@@ -1,0 +1,32 @@
+.about-container {
+  display: flex;
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+.about-description {
+  margin-bottom: 20px;
+}
+
+.about-left-side {
+  margin-right: 64px;
+}
+
+.about-img-list {
+  display: flex;
+}
+
+.about-img-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-text {
+  max-width: 480px;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 40px;
+}
