@@ -31,14 +31,14 @@
   width: 170px;
   padding: 20px;
   border: 1px solid #000;
-}
 
-.advantages-list-item:nth-child(odd) {
-  margin-right: 30px;
-}
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
 
-.advantages-list-item:nth-child(even) {
-  margin-top: 30px;
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
 }
 
 .advantages-list-count {

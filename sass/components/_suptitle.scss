@@ -1,6 +1,5 @@
 .suptitle {
-  display: flex;
-  align-items: center;
+  @extend %vertical-align;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;

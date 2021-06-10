@@ -1,0 +1,9 @@
+.logo {
+  animation-duration: 1000ms;
+  animation-iteration-count: 2;
+
+  &__img {
+    width: 68px;
+    height: 54px;
+  }
+}

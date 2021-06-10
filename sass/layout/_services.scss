@@ -21,31 +21,31 @@
 .services-list {
   width: 50%;
   padding: 30px 40px;
-}
 
-.services-list:first-child {
-  background-image: linear-gradient(
-    180deg,
-    #171a24 0%,
-    rgba(23, 26, 36, 0.2) 100%
-  );
-}
+  &:first-child {
+    background-image: linear-gradient(
+      180deg,
+      #171a24 0%,
+      rgba(23, 26, 36, 0.2) 100%
+    );
+  }
 
-.services-list:last-child {
-  background-image: linear-gradient(
-    180deg,
-    #090b13 0%,
-    rgba(9, 11, 19, 0.2) 100%
-  );
+  &:last-child {
+    background-image: linear-gradient(
+      180deg,
+      #090b13 0%,
+      rgba(9, 11, 19, 0.2) 100%
+    );
+  }
 }
 
 .services-list-item {
   display: flex;
   justify-content: space-between;
-}
 
-.services-list-item:not(:last-child) {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .services-list-name,

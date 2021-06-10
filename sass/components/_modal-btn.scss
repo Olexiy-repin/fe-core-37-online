@@ -10,18 +10,29 @@
   cursor: pointer;
   padding: 12px 20px;
   transition: color 250ms linear, background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+  }
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn_theme_dark {
   color: #ffffff;
-  background-color: var(--accent-color);
 }
 
-.modal-btn-theme-dark {
-  color: #ffffff;
-}
-
-.modal-btn-theme-light {
+.modal-btn_theme_light {
   color: #303030;
+}
+
+.modal-btn_disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  cursor: not-allowed;
+
+  &:hover,
+  &:focus {
+    background-color: #cccccc;
+  }
 }

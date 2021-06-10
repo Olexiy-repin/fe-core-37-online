@@ -16,6 +16,11 @@
   overflow: hidden;
 }
 
+.social-links-list, .suptitle {
+  display: flex;
+  align-items: center;
+}
+
 h1,
 h2,
 h3,
@@ -76,23 +81,27 @@ body {
   transition: color 250ms linear, background-color 250ms linear;
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
 
-.modal-btn-theme-dark {
+.modal-btn_theme_dark {
   color: #ffffff;
 }
 
-.modal-btn-theme-light {
+.modal-btn_theme_light {
   color: #303030;
 }
 
-.social-links-list {
-  display: flex;
-  align-items: center;
+.modal-btn_disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.modal-btn_disabled:hover, .modal-btn_disabled:focus {
+  background-color: #cccccc;
 }
 
 .social-links-list::before {
@@ -118,14 +127,11 @@ body {
   transition: color 250ms linear;
 }
 
-.social-links-list-link:hover,
-.social-links-list-link:focus {
+.social-links-list-link:hover, .social-links-list-link:focus {
   color: var(--accent-color);
 }
 
 .suptitle {
-  display: flex;
-  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -290,6 +296,19 @@ body {
   padding-left: 42px;
 }
 
+.modal-form-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.modal-form-input:required:focus:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+.modal-form-input:required:focus:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
 .modal-form-icon {
   position: absolute;
   top: 50%;
@@ -301,21 +320,8 @@ body {
   background-color: teal;
 }
 
-.modal-form-input:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
 .modal-form-input:focus + .modal-form-icon {
   background-color: var(--accent-color);
-}
-
-.modal-form-input:required:focus:not(:placeholder-shown):valid {
-  border-color: green;
-}
-
-.modal-form-input:required:focus:not(:placeholder-shown):invalid {
-  border-color: red;
 }
 
 .modal-form-message {
@@ -338,6 +344,10 @@ body {
   border-color: var(--accent-color);
 }
 
+.modal-form-checkbox-policy {
+  font-size: 12px;
+}
+
 .modal-form-checkbox-policy::before {
   display: inline-block;
   vertical-align: middle;
@@ -347,10 +357,6 @@ body {
   cursor: pointer;
   outline: 1px solid #000000;
   margin-right: 10px;
-}
-
-.modal-form-checkbox-policy {
-  font-size: 12px;
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
@@ -364,12 +370,12 @@ body {
 }
 
 .modal-form-btn {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
   align-self: center;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
@@ -379,8 +385,8 @@ body {
   margin-top: 20px;
 }
 
-.modal-form-btn:hover,
-.modal-form-btn:focus {
+.modal-form-btn .modal-form-btn:hover,
+.modal-form-btn .modal-form-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
@@ -392,51 +398,21 @@ body {
   padding-bottom: 32px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.navigation {
+.header__nav {
   display: flex;
   align-items: center;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-}
-
-.logo-img {
-  width: 68px;
-  height: 54px;
-}
-
-.logo-link {
+.header__logo {
   margin-right: 70px;
-  animation-duration: 1000ms;
-  animation-iteration-count: 2;
 }
 
-.menu-item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.menu-link {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  transition: color 250ms linear;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
-}
-
-.tel-link {
+.header__contact-link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -447,8 +423,7 @@ body {
   transition: color 250ms linear;
 }
 
-.tel-link:hover,
-.tel-link:focus {
+.header__contact-link:hover, .header__contact-link:focus {
   color: var(--accent-color);
 }
 
