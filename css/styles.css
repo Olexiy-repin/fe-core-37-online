@@ -31,16 +31,89 @@ body {
 }
 
 /* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* Если ширина вьюпорта в браузере будет 400px или больше, применить правила внутри */
+/* @media (min-width: 400px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* Если ширина вьюпорта в браузере будет 768px или больше, применить правила внутри */
+/* @media (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* Если вьюпорт от 0 до 900px применять правила внутри */
+/* @media (max-width: 900px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* Если вьюпорт от 0 до 400px применять правила внутри */
+/* @media (max-width: 400px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
 
 /* ========== AND ========== */
-
+/* 768+, 0 - 1199px
+  от 768 до 1199
+*/
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
 /* ========== OR ========== */
-
+/* 0 - 767, 1200+ */
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
 /* ========== TYPES ========== */
 /* 
   all
   screen 
   print
+  speech
 */
 
+/* @media print {
+  .nav {
+    display: none;
+  }
+
+  .modal-btn {
+    display: none;
+  }
+
+  .sec {
+    padding: 100px 0;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+} */
+
 /* ========== ORIENTATION ========== */
+/* @media screen and (orientation: landscape) and (max-width: 767px) {
+  body {
+    background-color: teal;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
