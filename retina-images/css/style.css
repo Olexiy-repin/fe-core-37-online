@@ -35,19 +35,60 @@ body {
   height: 100vh;
 }
 
+/* 
+  car-mob.jpg
+  car-mob@2x.jpg
+  car-tablet.jpg
+  car-tablet@2x.jpg
+  car-desktop.jpg
+  car-desktop@2x.jpg
+*/
+
 .banner {
   min-height: 600px;
-  background-image: url("../images/car.jpg");
+  background-image: url("../images/car-mob.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+/* 2x и 0 - 767px */
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
   .banner {
-    background-image: url("../images/car@2x.jpg");
+    background-image: url("../images/car-mob@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: url("../images/car-tablet.jpg");
+  }
+}
+
+/* 2x и 768+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .banner {
+    background-image: url("../images/car-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-image: url("../images/car-desktop.jpg");
+  }
+}
+
+/* 2x и 1200+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .banner {
+    background-image: url("../images/car-desktop@2x.jpg");
   }
 }
 
