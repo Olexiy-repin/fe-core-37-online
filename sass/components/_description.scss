@@ -1,6 +1,6 @@
 .description {
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
 }
 
@@ -10,4 +10,11 @@
 
 .description-theme-light {
   color: #555555;
+}
+
+@media screen and (min-width: 1200px) {
+  .description {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }

@@ -1,0 +1,44 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    overflow: auto;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &__container {
+      position: relative;
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+
+    &__coose-btn {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
