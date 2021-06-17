@@ -67,6 +67,38 @@ body {
   margin: 0 auto;
 }
 
+.logo {
+  animation-duration: 1000ms;
+  animation-iteration-count: 2;
+}
+
+.logo__img {
+  width: 68px;
+  height: 54px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu__link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  transition: color 250ms linear;
+}
+
+.menu__link:hover, .menu__link:focus {
+  color: var(--accent-color);
+}
+
 .modal-btn {
   border: 1px solid var(--accent-color);
   border-radius: 25px;
